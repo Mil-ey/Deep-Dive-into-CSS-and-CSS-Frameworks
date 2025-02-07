@@ -1,0 +1,145 @@
+:root {
+    --main-color: rgb(63, 54, 245); 
+    --secondary-color: hwb(0 3% 97%); 
+    --font-size-large: 24px;
+    font-style: Arial, sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: var(--font-size-large);
+    background-color: aliceblue;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--main-color);
+    align-items: center;
+}
+h2 {
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+h3 {
+    font-size: 1.17em;
+    color: var(--main-color);
+}
+h4 {
+    font-size: 1em;
+    color: var(--main-color);
+}
+h5 {
+    font-size: 0.83em;
+    color: var(--main-color);
+}
+h6 {
+    font-size: 0.67em;
+    color: var(--main-color);
+}
+p {
+    font-size: 1em;
+    color: var(--secondary-color);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px
+
+}
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-box button {
+    margin-top: 10px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flex-item {
+    background-color: #cce9f2;
+    padding: 20px;
+    width: 300px;
+    color: #390d8b;
+    text-align: center;
+    border-radius: 15px;
+}
+.flex-item:nth-child(1)
+{
+    background-color: #267eb5;
+}
+.flex-item:nth-child(2)
+{
+    background-color: #60a0ce;
+}
+.flex-item:nth-child(3)
+{
+    background-color: #99c9fd;
+}
+
+.flex-box button:focus {
+    outline: none;
+}
+
+.grid-conatiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    
+}
+.grid-section button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid-item {
+   background-color: #cce9f2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(40, 253, 3, 0.1);
+    width: 800px;
+    gap: 100px;
+}
+.relative-container {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    background-color:#cce9f2;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(40, 253, 3, 0.1);
+    text-align: left;
+    
+}
+
+.absolute-box p {
+    color: rgb(30, 9, 191); 
+}
+.absolute-box {
+    position: absolute;
+    bottom: -90%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background-color: #cce9f2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(40, 253, 3, 0.1);
+    width: 250px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
